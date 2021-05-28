@@ -111,7 +111,21 @@ INSERT INTO Aircraft_TB (AirlineID,DepartureAirportID,DepartureTime,ArrivalAirpo
 
 
 
+select (ROW_NUMBER() OVER(PARTITION BY Aircraft_TB.AirlineID ORDER BY Aircraft_TB.DepartureTime DESC )) AS rowNum,
+Aircraft_TB.*
+from Aircraft_TB
 
+
+select 
+airline_tb.NAME,
+aircraft_tb.AircraftID,
+aircraft_tb.DepartureTime,
+airport_tb.NAME,
+aircraft_tb.ArrivalTime
+from aircraft_tb
+INNER JOIN airline_tb ON aircraft_tb.AirlineID=airline_tb.AirlineID
+INNER JOIN airport_tb ON aircraft_tb.DepartureAirportID=airport_tb.AirportID
+INNER JOIN airport_tb ON aircraft_tb.ArrivalAirportID=airport_tb.AirportID
 
 
 
