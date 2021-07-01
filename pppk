@@ -1,0 +1,197 @@
+body{
+    font-family: Verdana;
+}
+header,footer{
+    position: absolute;
+    background-color: grey;
+    width: 50%;
+    color: white;
+}
+header{
+    height: 90px;
+}
+header h3{
+    position: absolute;
+    margin-top: 0px;
+}
+footer{
+    height:60px;
+    bottom: 30px;
+}
+footer h5{
+    position: absolute;
+    margin-top: 0PX;
+    
+}
+.wholepage{
+    margin: 0px auto 0px auto;
+    width: 1060px;
+    height: 800px;
+}
+.leftsidebar{
+    padding: 20px;
+    background-color:#D3D3D3;
+    height:420px;
+    width:200px;
+    margin-top:290px;
+    bottom: 200px;
+    
+}
+.content{ 
+    height:400px;
+    width:745px;
+    left:-200px;
+    right:-200px;
+    margin-bottom:-600px;  
+    margin-left: 240px;  
+}
+
+.leftsidebar ul li{
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    border-radius: 5px;
+    
+    
+}
+.leftsidebar ul li .card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px, 5px rgba(0, 0, 0, 10);
+    padding:10px;
+    border-collapse: separate;  
+    border: 5px;
+    
+}
+.content table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;   
+    overflow: scroll;
+    display: block;
+    overflow:scroll;     
+    height:540px;
+    width:500px;
+    margin-top: 100px;
+    padding:90px;   
+    
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+    text-align: left;
+    margin-right: 50px;
+    margin-top: 100px;
+   
+
+   
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+  .content table th{
+      background-color:#808080;   
+
+  }
+  ------------------------------html----------------------
+  <html>
+    <head>
+        <title>Header and Footer</title>
+        <link href="youtube.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wholepage">
+        <header>
+            <h3>Youtube Data Analysis</h3>
+        </header>
+        <div class="content">
+            
+
+<table>
+    
+  <tr>
+    <th>Channel title</th>
+    <th>Category</th>
+    <th>Latest video</th>
+    <th>Latest Trending date</th>
+    <th>Latest publish time</th>
+    <th>video count</th>
+    <th>Total Views</th>
+  </tr>
+  <tr>
+    <td>The tonight show starring jimmy fallon</td>
+    <td>Comedy</td>
+    <td>Cord & Tish (Will ferrell& Molly Shannon)Preview the royal Wedding</td>
+    <td>18.31.05</td>
+    <td>5/17/2018 3:53</td>
+    <td>208</td>
+    <td>447390019</td>
+  </tr>
+  <tr>
+    <td>The EllenShow</td>
+    <td>Entertainment</td>
+    <td>BTS Takes the stage with Fake 'Love</td>
+    <td>18.31.05</td>
+    <td>5/17/2018 3:53</td>
+    <td>208</td>
+    <td>447390019</td>
+  </tr>
+  <tr>
+    <td>Saturday Night Live</td>
+    <td>Entertainment</td>
+    <td>Royal wedding-SNL</td>
+    <td>18.31.05</td>
+    <td>5/17/2018 3:53</td>
+    <td>208</td>
+    <td>447390019</td>
+  </tr>
+  <tr>
+    <td>WWE</td>
+    <td>Sports</td>
+    <td>Bobby Lasley ends Sami Zayn's disrespectful hoax: Raw, May21,2018</td>
+    <td>18.31.05</td>
+    <td>5/17/2018 3:53</td>
+    <td>208</td>
+    <td>447390019</td>
+  </tr>
+  <tr>
+    <td>Breakfast Club Power 105.1 FM</td>
+    <td>Entertainment</td>
+    <td>Pusha T To Drake: All Bets Are Off And Every thing is on the Table</td>
+    <td>18.31.05</td>
+    <td>5/17/2018 3:53</td>
+    <td>208</td>
+    <td>447390019</td>
+  </tr>
+</table>
+        </div>
+        
+         <div class="leftsidebar"> 
+           <ul>
+               <li>
+                   <div class="card">
+                       <strong>Entertainment</strong>
+                       <span>56channels</span>
+                   </div>
+               </li>
+               <li>
+                <div class="card">
+                    <strong>Entertainment</strong>
+                    <span>56channels</span>
+                </div>
+            </li>
+           </ul>
+        </div>    
+        
+        <footer>
+            <h5>&copy;L&T Technology Services:All rights reserved</h5s>
+        </footer>
+        </div>
+    </body>
+</html>
+ 
